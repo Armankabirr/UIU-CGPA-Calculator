@@ -157,14 +157,14 @@ function calculateGPA() {
     // Display results
     const resultBox = document.getElementById('gpaResult');
     resultBox.innerHTML = `
-        <h3 style="color: #667eea; margin-bottom: 15px;">Semester Results</h3>
+        <h3 style="color: #ff6b35; margin-bottom: 15px;">Semester Results</h3>
         ${courseDetails.map(course => `
             <div class="result-item">
                 <span class="result-label">${course.name}</span>
                 <span>${course.grade} (${course.gradePoint.toFixed(2)}) × ${course.credit} credits</span>
             </div>
         `).join('')}
-        <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 2px solid #667eea;">
+        <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 2px solid #ff6b35;">
             <span class="result-label">Total Credits Attempted:</span>
             <span class="result-value">${totalCredits.toFixed(1)}</span>
         </div>
@@ -237,7 +237,7 @@ function calculateCGPA() {
     // Display results
     const resultBox = document.getElementById('cgpaResult');
     resultBox.innerHTML = `
-        <h3 style="color: #764ba2; margin-bottom: 15px;">Cumulative Results</h3>
+        <h3 style="color: #f7931e; margin-bottom: 15px;">Cumulative Results</h3>
         <div class="result-item">
             <span class="result-label">Previous CGPA:</span>
             <span class="result-value">${previousCGPA.toFixed(2)}</span>
@@ -254,7 +254,7 @@ function calculateCGPA() {
             <span class="result-label">Current Semester Credits:</span>
             <span class="result-value">${currentCredits.toFixed(1)}</span>
         </div>
-        <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 2px solid #764ba2;">
+        <div class="result-item" style="margin-top: 15px; padding-top: 15px; border-top: 2px solid #f7931e;">
             <span class="result-label">Total Credits:</span>
             <span class="result-value">${totalCredits.toFixed(1)}</span>
         </div>
